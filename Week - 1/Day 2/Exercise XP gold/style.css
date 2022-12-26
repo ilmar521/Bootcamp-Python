@@ -31,11 +31,11 @@ button:active {
 }
 
 .main-section {
-    background-image: url(../img/bg-img.jpeg);
+    background-image: url(img/bg-img.jpeg);
     background-repeat: no-repeat;
     width: auto; 
     height: 600px;
-    background-size: 100%;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center; /*Центрирование по горизонтали*/
     align-items: center;     /*Центрирование по вертикали */
