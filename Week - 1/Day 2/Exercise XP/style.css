@@ -13,3 +13,42 @@
 .element-list1 {
     margin-left: 30px;
 }
+
+.img-cat {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid red;
+}
+
+.lion-desc {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.p-difference {
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;  
+    text-align: center;
+}
+
+.img-lion {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border: 8px solid red;
+}
