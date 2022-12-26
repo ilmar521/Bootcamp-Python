@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.all-page {
+    display: flex;
+    flex-direction: column;
+}
+.nav-panel {
+    background-color: rgb(248, 241, 241);
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+    font-size: larger;
+}
+
+button {
+    color: white;
+    background-color: rgb(81, 81, 85);
+    border-radius: 15%;
+    border: 0px;
+    width: 60px;
+    height: 20px;
+}
+
+button:active {
+    background-color: rgb(105, 105, 221);    
+}
+
+.main-section {
+    background-image: url(../img/bg-img.jpeg);
+    background-repeat: no-repeat;
+    width: auto; 
+    height: 600px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;     /*Центрирование по вертикали */
+    align-content: center;
+}
+
+.info {
+    width: 600px;
+    padding-left: 50px;
+}
+
+.info-header {
+    align-items: center;
+}
+
+form {
+    display: flex;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+.form-element-mail {
+    width: 400px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.form-element-button {
+    color: white;
+    background-color: rgb(81, 81, 85);
+    border-radius: 15%;
+    border: 0px;
+
+}
+
+.form-element-button:active {
+    background-color: rgb(105, 105, 221);    
+}
+
+.section {
+    background-color: rgb(248, 241, 241);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+}
+
+i {
+    margin-bottom: 20px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+}
+
+.card-header {
+    font-weight: bold;
+}
