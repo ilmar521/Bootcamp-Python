@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+html, body{height: 100%;}
+
+body {
+    display: table;
+    width: 100%;
+}
+
+.title {
+    font-size: 35px !important;
+    font-weight: bolder;
+}
+
+.text-between {
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+.text-between span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.text-between:before,
+.text-between:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    position: relative;
+}
+.text-between:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.text-between:after {
+    margin-right: -100%;
+    right: -14px;
+}
+
+#left {
+    display: table-cell; 
+    width: 50%;
+    text-align: center;
+    position:relative;
+    color: black;
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+#left-contain {
+    margin: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+}
+
+#left-contain>button {
+    margin: 15px 0;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    background-color: #9C27B0;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {   
+    height: 30px;
+    border: 0; 
+    background-color: #EEEEEE;
+    padding-left: 15px;
+}
+
+.hint-pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left .title {
+    color: black;
+}
+
+#Contacts {
+    margin-top:20px;
+    margin-bottom: 100px;
+}
+
+#Contacts>i {
+    margin-right: 15px;
+}
+
+.footer {
+    position: absolute; 
+    left:50%; 
+    bottom:2%;
+    font-size: 10px;
+}
+
+#right {
+    padding: 50px 0px;
+    display: table-cell; 
+    width: 50%;
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(180,41,214,1) 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.fa-arrow-right {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+#right-contain>i {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#right-contain>p {
+    font-size: 16px;
+    margin: 15px;
+}
+
+#right-contain {
+   margin: 0;
+   position: absolute;               
+   top: 50%;    
+   width: 100%;                     
+   transform: translate(0, -50%) 
+}
+
+#right-contain>button {
+    margin-top: 30px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgba(28,28,28,0);
+    font-size: 20px;
+}
