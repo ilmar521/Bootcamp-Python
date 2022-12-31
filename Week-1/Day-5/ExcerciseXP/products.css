@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    margin: 10px 20px;
+    display: block;
+
+}
+
+.new {
+    background-color: green; 
+    float: left;
+}
+.discount {
+    background-color: red; 
+    float: right;
+}
+
+.new, .discount {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 250%;
+    border-radius: 50%;
+}
+.card {
+    margin: 10px;
+    float: left;
+}
+
+#card-1 > .image {
+    background-image: url(img-cards/image1.png);   
+}
+#card-2 > .image {
+    background-image: url(img-cards/image2.png);    
+}
+#card-3 > .image {
+    background-image: url(img-cards/image3.png);    
+}
+#card-4 > .image {
+    background-image: url(img-cards/image4.png);    
+}
+#card-5 > .image {
+    background-image: url(img-cards/image5.webp);    
+}
+#card-6 > .image {
+    background-image: url(img-cards/image6.webp);    
+}
+#card-7 > .image {
+    background-image: url(img-cards/image7.webp);    
+}
+#card-8 > .image {
+    background-image: url(img-cards/image8.webp);    
+}
+#card-9 > .image {
+    background-image: url(img-cards/image9.webp);    
+}
+#card-10 > .image {
+    background-image: url(img-cards/image10.webp);    
+}
+#card-11 > .image {
+    background-image: url(img-cards/image11.webp);    
+}
+#card-12 > .image {
+    background-image: url(img-cards/image12.webp);    
+}
+
+.image {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:258px;
+    width:200px;
+}
+
+.card-name {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.price {
+    margin: 5px;
+}
+
+.price-new {
+    font-weight: bold;
+    color: green;
+}
+
+.price-old {
+    font-size: 13px;
+    color: grey;
+    text-decoration: line-through;
+}
+
+
+button {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    font-weight: bold;
+    color: grey;
+    height: 30px;
+}
+
+.card-info {
+    text-align: center;
+}
