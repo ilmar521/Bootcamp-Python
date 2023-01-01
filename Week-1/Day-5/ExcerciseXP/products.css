@@ -39,6 +39,10 @@ body {
     float: left;
 }
 
+.card:hover {
+    box-shadow: 0 0 10px 2px grey
+}
+
 #card-1 > .image {
     background-image: url(img-cards/image1.png);   
 }
@@ -107,6 +111,7 @@ body {
 
 button {
     margin-top: 10px;
+    margin-bottom: 5px;
     background-color: white;
     border: 1px solid grey;
     font-weight: bold;
