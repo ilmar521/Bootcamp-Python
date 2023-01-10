@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+
+
+div {
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.center-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 5;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1;
+    padding-right: 10px;
+}
