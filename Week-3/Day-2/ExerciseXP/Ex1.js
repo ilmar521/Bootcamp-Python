@@ -1,4 +1,4 @@
 let myFavFood = "egg"
 let myFavMeal = "breakfast"
 
-console.log("I eat " + myFavFood + " at every " + myFavMeal);
+console.log(`I eat ${myFavFood} at every ${myFavMeal}`);
