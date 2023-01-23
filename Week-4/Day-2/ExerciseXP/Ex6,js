@@ -1,0 +1,43 @@
+function hotelCost() {
+    let amNights = 0;   
+    while (isNaN(amNights) || amNights === 0) {
+        amNights = Number(prompt('Enter number of nights'));    
+    } 
+    return amNights * 140; 
+}
+
+function planeRideCost() {
+    let destination = '';   
+    while (destination === '' || (typeof destination) != 'string') {
+        destination = prompt('Enter your destination');    
+    } 
+    if (destination === 'London') {
+        return 183;    
+    } else if (destination === 'Paris') {
+        return 220;    
+    } else {
+        return 300;
+    }
+}
+
+function rentalCarCost() {
+    let amRental = 0;   
+    while (isNaN(amRental) || amRental === 0) {
+        amRental = Number(prompt('Enter number of days would you like rent a car'));    
+    } 
+    if (amRental > 10) {
+        return amRental * 38;    
+    } else {
+        return amRental * 40;     
+    }
+}
+
+function totalVacationCost() {
+    let hotelPrice = hotelCost();
+    let planeRidePrice = planeRideCost();
+    let rentalCarPrice = rentalCarCost();
+
+    console.log(`The car cost: ${rentalCarPrice}$, the hotel cost: ${hotelPrice}$, the plane tickets cost: ${planeRidePrice}$.`);
+}
+
+totalVacationCost();
