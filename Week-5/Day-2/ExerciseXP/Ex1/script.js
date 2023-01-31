@@ -41,14 +41,16 @@ function onMouseOverParagraph() {
     this.style.transition = `opacity 1000ms`;
     this.style.opacity = 0;
   
-    setTimeout(() => {
-    }, 1000);
+    // setTimeout(() => {
+    // }, 1000);
 }
 
 function onMouseLeaveParagraph() {
     this.style.opacity = 0;
     this.style.transition = `opacity 1000ms`;
-    setTimeout(() => {
-        this.style.opacity = 1;
-    }, 10);
+    this.style.opacity = 1;
+    
+    // setTimeout(() => {
+    //     this.style.opacity = 1;
+    // }, 10);
 }
