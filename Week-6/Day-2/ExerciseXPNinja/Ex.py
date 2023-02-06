@@ -7,3 +7,5 @@ while 1 == 1:
         if len(word) > longest_word:
             longest_word = len(word)
             print('Congrats! You can find new longest word')
+
+while
