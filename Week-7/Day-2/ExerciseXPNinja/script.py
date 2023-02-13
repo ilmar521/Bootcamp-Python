@@ -23,4 +23,4 @@ def show_frame(arr):
     print("*" * (maxLong + 4))
 
 
-show_frame(list_str);
+show_frame(list_str)
