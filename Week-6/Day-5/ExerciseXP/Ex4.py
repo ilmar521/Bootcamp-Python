@@ -26,7 +26,7 @@ for item in users:
     if item[0] == 'M' or item[0] == 'P' or 'i' in item:
         disney_users_D[item] = i
         i += 1
-    else:
-        continue
+    else:  # it's redundant, there is no need for this else
+        continue 
 
 print(disney_users_D)
