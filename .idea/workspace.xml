@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-7/Day-4/ExerciseXP/Ex1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-7/Day-4/TimedChallenge/script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-7/Day-4/ExerciseXP/Ex2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-7/Day-2/DailyChallenge/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-7/Day-2/DailyChallenge/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7/Day-4/ExerciseXP/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-7/Day-4/ExerciseXP/Ex1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676388613892</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Commit">
+      <created>1676392007549</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676392007549</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
