@@ -8,15 +8,15 @@ $a
 ^r!'''
 
 list_matrix = matrix_srt.split('\n')
-final_srt = ''
+final_list = []
 
 if len(list_matrix) > 0:
     for col in range(0, len(list_matrix[0])):
         for row in list_matrix:
             if row[col].isalpha():
-                final_srt += row[col]
+                final_list.append(row[col])
             else:
-                if len(final_srt) > 0 and final_srt[-1] != ' ':
-                    final_srt += ' '
+                if len(final_list) > 0 and final_list[-1] != ' ' and row != list_matrix[0]:
+                    final_list.append(' ')
 
-print(final_srt)
+print(''.join(final_list))
