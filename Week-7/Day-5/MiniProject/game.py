@@ -13,6 +13,7 @@ diagonal_check = [
     [2, 1, 0]
 ]
 
+
 def display_board():
     print('')
     print('TIC TAC TOE!')
@@ -68,6 +69,7 @@ def check_win():
         if board[0][val[0]] == board[1][val[1]] and board[0][val[0]] == board[2][val[2]] and board[0][val[0]] != ' ':
             game_on = False
             return board[0][val[0]]
+
     return ' '
 
 
@@ -85,7 +87,6 @@ def play():
                     print(f'It is tie!')
                 else:
                     print(f'Player {winner} win!')
-
 
     again = input('Do you wanna play again? (y/n): ')
     if again == 'y':
