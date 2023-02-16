@@ -1,14 +1,11 @@
 import random
 
 hangman = ['head', 'body', 'left arm', 'right arm', 'left leg', 'right leg']
-hangman_game = []
-wordslist = ['correction', 'childish', 'beach', 'python', 'assertive', 'interference', 'complete', 'share', 'credit card', 'rush', 'south']
-word = ''
+words_list = ['correction', 'childish', 'beach', 'python', 'assertive', 'interference', 'complete', 'share', 'credit card', 'rush', 'south']
 
 
 def start_game():
-    global word, hangman_game
-    word = random.choice(wordslist)
+    word = random.choice(words_list)
     hangman_game = []
     print('Hide word:')
     user_word = '*' * len(word)
@@ -45,5 +42,6 @@ def start_game():
                         hangman_game.append(i)
                         break
                 print(hangman_game)
+
 
 start_game()
