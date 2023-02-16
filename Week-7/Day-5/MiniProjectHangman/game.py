@@ -14,16 +14,19 @@ def input_letter(user_arr):
             return user_letter
 
 
-def compile_user_word(word, user_word, user_letter):
+def find_user_letter_in_hide_word(word, user_letter):
     index_arr = []
     for index, i in enumerate(word):
         if i == user_letter:
             index_arr.append(index)
+    return index_arr
 
+
+def change_all_finding_letters(user_word, index_arr, user_letter):
     user_arr_temp = list(user_word)
     for i in index_arr:
         user_arr_temp[i] = user_letter
-    return index_arr, ''.join(user_arr_temp)
+    return ''.join(user_arr_temp)
 
 
 def append_hangman(index_arr, hangman_game):
@@ -36,10 +39,10 @@ def append_hangman(index_arr, hangman_game):
 
 
 def start_game():
-    word = random.choice(words_list)
+    word_to_guess = random.choice(words_list)
     hangman_game = []
     print('Hide word:')
-    user_word = '*' * len(word)
+    user_word = '*' * len(word_to_guess)
     user_arr = []
     print(user_word)
     while True:
@@ -49,8 +52,9 @@ def start_game():
 
         user_letter = input_letter(user_arr)
         user_arr.append(user_letter)
-        index_arr, user_word = compile_user_word(word, user_word, user_letter)
-        if user_word == word:
+        index_arr = find_user_letter_in_hide_word(word_to_guess, user_letter)
+        user_word = change_all_finding_letters(user_word, index_arr, user_letter)
+        if user_word == word_to_guess:
             print('CONGRATS YOU WIN!')
             break
         else:
