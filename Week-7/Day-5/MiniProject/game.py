@@ -12,7 +12,7 @@ diagonal_check = [
     [0, 1, 2],
     [2, 1, 0]
 ]
-
+winner_player = ''
 
 def display_board():
     print('')
@@ -43,34 +43,58 @@ def player_input(player):
                 break
         except Exception:
             print('You enter invalid values!')
-            continue # it's redundant you can remove it
 
 
-def check_win():
-    global game_on
-
+def is_tie():
+    global winner_player
     empty_field = 0 # extract this section to a function like is_tie
     for i in range(3):
         empty_field += board[i].count(' ')
 
     if empty_field <= 1:
-        game_on = False
-        return 'tie'
+        winner_player = 'tie'
+        return True
+    else:
+        return False
 
-    for i in range(3): # extract this section to a function like is_win_in_row
+
+def is_win_in_row():
+    global winner_player
+    for i in range(3):
         if board[i][0] == board[i][1] and board[i][0] == board[i][2] and board[i][0] != ' ':
-            game_on = False
-            return board[i][0]
-    for i in range(3): # extract this section to a function like is_win_in_column
-        if board[0][i] == board[1][i] and board[0][i] == board[2][i] and board[0][i] != ' ':
-            game_on = False
-            return board[0][i]
-    for val in diagonal_check: # extract this section to a function like is_win_in_diagonal
-        if board[0][val[0]] == board[1][val[1]] and board[0][val[0]] == board[2][val[2]] and board[0][val[0]] != ' ':
-            game_on = False
-            return board[0][val[0]]
+            winner_player = board[i][0]
+            return True
+    return False
 
-    return ' '
+
+def is_win_in_column():
+    global winner_player
+    for i in range(3):
+        if board[0][i] == board[1][i] and board[0][i] == board[2][i] and board[0][i] != ' ':
+            winner_player = board[0][i]
+            return True
+    return False
+
+
+def is_win_in_diagonal():
+    global winner_player
+    for val in diagonal_check:
+        if board[0][val[0]] == board[1][val[1]] and board[0][val[0]] == board[2][val[2]] and board[0][val[0]] != ' ':
+            winner_player = board[0][val[0]]
+            return True
+    return False
+
+
+def check_win():
+    global game_on
+
+    if is_tie():
+        game_on = False
+        return
+
+    if is_win_in_row() or is_win_in_column() or is_win_in_diagonal():
+        game_on = False
+    return
 
 
 def play():
@@ -81,12 +105,13 @@ def play():
             print('')
             player_input(player)
             display_board()
-            winner = check_win()
-            if winner != ' ':
-                if winner == 'tie':
+            check_win()
+            if winner_player != '':
+                if winner_player == 'tie':
                     print(f'It is tie!')
                 else:
-                    print(f'Player {winner} win!')
+                    print(f'Player {winner_player} win!')
+                    break
 
     again = input('Do you wanna play again? (y/n): ')
     if again == 'y':
@@ -94,7 +119,8 @@ def play():
 
 
 def start_game():
-    global game_on, board
+    global game_on, board, winner_player
+    winner_player = ''
     board = [
         [' ', ' ', ' '],
         [' ', ' ', ' '],
