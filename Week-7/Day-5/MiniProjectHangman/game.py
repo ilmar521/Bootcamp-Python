@@ -1,6 +1,6 @@
 import random
 
-hangman = ['head', 'body', 'left arm', 'right arm', 'left leg', 'right leg']
+hangman_full = ['head', 'body', 'left arm', 'right arm', 'left leg', 'right leg']
 words_list = ['correction', 'childish', 'beach', 'python', 'assertive', 'interference', 'complete', 'share', 'credit card', 'rush', 'south']
 
 
@@ -31,7 +31,7 @@ def change_all_finding_letters(user_word, index_arr, user_letter):
 
 def append_hangman(index_arr, hangman_game):
     if len(index_arr) == 0:
-        for i in hangman:
+        for i in hangman_full:
             if i not in hangman_game:
                 hangman_game.append(i)
                 break
@@ -43,15 +43,15 @@ def start_game():
     hangman_game = []
     print('Hide word:')
     user_word = '*' * len(word_to_guess)
-    user_arr = []
+    user_word_arr = []
     print(user_word)
     while True:
-        if hangman_game == hangman:
+        if hangman_game == hangman_full:
             print('Out of chances!')
             break
 
-        user_letter = input_letter(user_arr)
-        user_arr.append(user_letter)
+        user_letter = input_letter(user_word_arr)
+        user_word_arr.append(user_letter)
         index_arr = find_user_letter_in_hide_word(word_to_guess, user_letter)
         user_word = change_all_finding_letters(user_word, index_arr, user_letter)
         if user_word == word_to_guess:
