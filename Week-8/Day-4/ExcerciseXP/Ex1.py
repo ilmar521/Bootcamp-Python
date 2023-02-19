@@ -1,5 +1,4 @@
 
-# Create a list called all_cats, which holds three cat instances : one Bengal, one Chartreux and one Siamese.
 # Those three cats are Sara’s pets. Create a variable called sara_pets which value is an instance of the Pet class, and pass the variable all_cats to the new instance.
 # Take all the cats for a walk, use the walk method.
 
@@ -36,3 +35,8 @@ class Chartreux(Cat):
 class Siamese(Cat):
     def sing(self, sounds):
         return f'{sounds}'
+
+
+all_cats = [Bengal('Bengal Cat', 5), Chartreux('Chartreux Cat', 6), Siamese('Siamese Cat', 6)]
+sara_pets = Pets(all_cats)
+sara_pets.walk()
