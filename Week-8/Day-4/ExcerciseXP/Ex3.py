@@ -1,6 +1,6 @@
-
 from Ex2 import Dog
 from random import randint
+
 
 class PetDog(Dog):
 
