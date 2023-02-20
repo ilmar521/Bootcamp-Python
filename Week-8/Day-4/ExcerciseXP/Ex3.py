@@ -29,4 +29,3 @@ pet_dog3 = PetDog('Carl', 11, 35)
 pet_dog3.train()
 pet_dog3.play(pet_dog1, pet_dog2)
 pet_dog3.do_a_trick()
-
