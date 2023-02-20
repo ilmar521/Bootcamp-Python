@@ -1,6 +1,6 @@
 
 from Ex2 import Dog
-
+from random import randint
 
 class PetDog(Dog):
 
@@ -19,8 +19,9 @@ class PetDog(Dog):
         print(f'{", ".join(dogs_list)} all play together')
 
     def do_a_trick(self):
+        list_actions = ['does a barrel roll', 'stands on his back legs', 'shakes your hand', 'plays dead']
         if self.trained:
-            print('fff')
+            print(f'{self.name} {list_actions[randint(0,3)]}')
 
 
 pet_dog1 = Dog('Bob', 12, 40)
