@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit" />
+    <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/Week-8/Day-3/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,13 +48,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Commit">
-      <created>1675792856321</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1675792856321</updated>
     </task>
     <task id="LOCAL-00007" summary="Commit">
       <created>1675836176534</created>
@@ -389,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676996385997</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Commit">
+      <created>1676996463580</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676996463580</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
