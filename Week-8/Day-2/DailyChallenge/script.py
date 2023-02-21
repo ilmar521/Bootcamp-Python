@@ -4,17 +4,17 @@ class Farm:
         self.name = name
         self.animals = {}
 
-    def add_animal(self, animal, number = 0):
+    def add_animal(self, animal, number = 1):
         if animal in self.animals.keys():
-            self.animals[animal] += 1 if number == 0 else number
+            self.animals[animal] += number
         else:
-            self.animals[animal] = 1 if number == 0 else number
+            self.animals[animal] = number
 
     def get_info(self):
         final_str = "McDonald's farm" + '\n' + '\n'
         for key, value in self.animals.items():
             final_str += f"{key} : {value}" + '\n'
-        final_str += '\n' + '    E-I-E-I-0!'
+        final_str += '\n\tE-I-E-I-0!'
         return final_str
 
 
