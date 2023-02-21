@@ -5,10 +5,7 @@ class Farm:
         self.animals = {}
 
     def add_animal(self, animal, number = 1):
-        if animal in self.animals.keys():
-            self.animals[animal] += number
-        else:
-            self.animals[animal] = number
+        self.animals[animal] = self.animals.get(animal, 0) + number
 
     def get_info(self):
         final_str = "McDonald's farm" + '\n' + '\n'
