@@ -7,7 +7,7 @@ def get_user_menu_choice():
         value = input('Menu: \n (g) Play new game \n (x) Show scores and exit \n :')
         if value in list_of_values:
             return value
-        else:
+        else:  # there is no need for this else bacause at the if statmet you do return 
             print('You enter invalid value, please enter again')
 
 
