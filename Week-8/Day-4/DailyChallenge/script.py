@@ -5,13 +5,11 @@ class Pagination:
         self.page_size = int(page_size)
         self.current_page = 1
         pages = []
-        total_pages = 0
         i = 0
         for x in items:
             if i == 0:
                 i += 1
                 pages.append([x])
-                total_pages += 1
             else:
                 if i == self.page_size - 1:
                     i = 0
@@ -19,8 +17,7 @@ class Pagination:
                 else:
                     i += 1
                     pages[-1].append(x)
-
-        self.total_pages = total_pages
+        self.total_pages = len(pages)
         self.pages = pages
 
     def prev_page(self):
