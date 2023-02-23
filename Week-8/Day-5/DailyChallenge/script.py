@@ -9,8 +9,8 @@ class Card:
 
 
 class Deck:
-
-    cards_in_deck = []
+    def __init__(self):
+        self.cards_in_deck = []
 
     def shuffle(self):
         suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
