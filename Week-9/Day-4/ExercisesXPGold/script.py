@@ -1,5 +1,4 @@
 
-
 class Door:
     objs = 0
     KEYS = 1
