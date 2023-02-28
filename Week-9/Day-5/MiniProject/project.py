@@ -38,8 +38,7 @@ class Queue:
         ind_1 = self.find_in_queue(person1)
         ind_2 = self.find_in_queue(person2)
         if ind_1 is not None and ind_2 is not None:
-            self.humans[ind_2] = person1
-            self.humans[ind_1] = person2
+            self.humans[ind_2], self.humans[ind_1] = person1, person2
 
     def get_next(self):
         if len(self.humans) == 0:
@@ -58,7 +57,12 @@ class Queue:
 
     def sort_by_age(self):
         list_of_priority = list(filter(lambda human: human.priority, self.humans))
-        list_of_regular = list(filter(lambda human: human.priority, self.humans))
+        list_of_regular = list(filter(lambda human: not human.priority, self.humans))
+        for x in range(len(list_of_regular)):
+            for y in range(len(list_of_regular) - x - 1):
+                if list_of_regular[y].age < list_of_regular[y + 1].age:
+                    list_of_regular[y], list_of_regular[y + 1] = list_of_regular[y + 1], list_of_regular[y]
+        self.humans = list_of_priority + list_of_regular
 
 
 h1 = Human('H1', 18, False, 'A')
@@ -87,4 +91,6 @@ queue.add_person(h7)
 queue.get_next_blood_type('AB')
 queue.print()
 queue.add_person(h2)
+queue.print()
+queue.sort_by_age()
 queue.print()
