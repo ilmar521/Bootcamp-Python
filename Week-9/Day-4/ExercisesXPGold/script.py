@@ -9,8 +9,7 @@ class Door:
             if door_to.locked:
                 if Door.KEYS == 0:
                     return solve
-                else:
-                    Door.KEYS -= 1
+                Door.KEYS -= 1
             solve['can_go'] = True
             solve['way_to_door'] = f"{door_from.name} -- {door_to.name}"
             return solve
@@ -19,8 +18,7 @@ class Door:
             if door.locked:
                 if Door.KEYS == 0:
                     return solve
-                else:
-                    Door.KEYS -= 1
+                Door.KEYS -= 1
             Door.recursion_find_way(door, door_to, solve)
             if solve['can_go']:
                 solve['way_to_door'] = f"{door_from.name} -- " + solve['way_to_door']
