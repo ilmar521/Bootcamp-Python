@@ -65,6 +65,7 @@ class Queue:
         self.humans = list_of_priority + list_of_regular
 
 
+
 h1 = Human('H1', 18, False, 'A')
 h2 = Human('H2', 61, False, 'AB')
 h3 = Human('H3', 13, True, 'B')
