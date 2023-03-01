@@ -8,7 +8,23 @@ class Human:
         self.age = age
         self.priority = priority
         self.blood_type = blood_type
+        self.family = []
         Human.id += 1
+
+    def add_family_member(self, person):
+        was_added = False
+        if person not in self.family and person != self:
+            self.family.append(person)
+            was_added = True
+        if self not in person.family and person != self:
+            person.add_family_member(self)
+            was_added = True
+        if not was_added:
+            return
+        for human in self.family:
+            human.add_family_member(person)
+            person.add_family_member(human)
+
 
 class Queue:
 
@@ -64,6 +80,12 @@ class Queue:
                     list_of_regular[y], list_of_regular[y + 1] = list_of_regular[y + 1], list_of_regular[y]
         self.humans = list_of_priority + list_of_regular
 
+    # H3 - H6 - H7 - H2 - H5 - H4 - H1
+    def rearange_queue(self):
+        for x in range(len(self.humans)):
+            for i in range(1, len(self.humans)):
+                if self.humans[i - 1] in self.humans[i].family and i != len(self.humans) - 1:
+                    self.humans[i], self.humans[i + 1] = self.humans[i + 1], self.humans[i]
 
 
 h1 = Human('H1', 18, False, 'A')
@@ -94,4 +116,9 @@ queue.print()
 queue.add_person(h2)
 queue.print()
 queue.sort_by_age()
+queue.print()
+
+h3.add_family_member(h6)
+h3.add_family_member(h7)
+queue.rearange_queue()
 queue.print()
