@@ -1,6 +1,5 @@
 import datetime
 
-
 class Airline:
 
     def __init__(self, id, name):
@@ -26,10 +25,17 @@ class Airplane:
         pass
 
     def location_on_date(self, date):
-        pass
+        list_of_flights = list(filter(lambda flight: flight.date <= date, self.next_flights))
+        if len(list_of_flights) == 0:
+            return self.current_location
+        return list_of_flights[-1].destination
 
     def available_on_date(self, date, location):
-        pass
+        location_on_date = self.location_on_date(date)
+        if location_on_date != location:
+            return False
+        list_of_flights = list(filter(lambda flight: flight.date == date, self.next_flights))
+        return len(list_of_flights) == 0
 
 
 class Flight:
@@ -69,9 +75,9 @@ ben_gurion = Airport('Tel Aviv')
 shremetevo = Airport('Moscow')
 jfk = Airport('New York')
 
-aa_1 = Airplane(ben_gurion)
-aa_2 = Airplane(shremetevo)
-aa_3 = Airplane(shremetevo)
-ea_1 = Airplane(jfk)
-ea_2 = Airplane(ben_gurion)
-ea_3 = Airplane(shremetevo)
+aa_1 = Airplane(ben_gurion, avrora_air)
+aa_2 = Airplane(shremetevo, avrora_air)
+aa_3 = Airplane(shremetevo, avrora_air)
+ea_1 = Airplane(jfk, elal_air)
+ea_2 = Airplane(ben_gurion, elal_air)
+ea_3 = Airplane(shremetevo, elal_air)
