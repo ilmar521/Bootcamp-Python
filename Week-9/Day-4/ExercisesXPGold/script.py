@@ -5,6 +5,7 @@ class Door:
 
     @staticmethod
     def recursion_find_way(door_from, door_to, solve):
+         # try to simplify the function by dividing it to small functions
         if door_to in door_from.next:
             if door_to.locked:
                 if Door.KEYS == 0:
