@@ -26,10 +26,9 @@ class Currency:
             if other.currency != self.currency:
                 raise Exception(f'Cannot add between Currency type {self.currency} and {other.currency}')
             self.amount += other.amount
-            return self # you can take this retrun and put it at the end of the function then you need to type return self just one
         elif isinstance(other, int):
             self.amount += other
-            return self
+        return self
 
 
 c1 = Currency('dollar', 5)

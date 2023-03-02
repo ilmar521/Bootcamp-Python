@@ -12,7 +12,7 @@ class Human:
         Human.id += 1
 
     def add_family_member(self, person):
-        was_added = False # you can really simplify this funciton by chaning the family to set, then if you added the same person more than time ot will be added just once
+        was_added = False
         if person not in self.family and person != self:
             self.family.append(person)
             was_added = True
@@ -33,7 +33,7 @@ class Queue:
 
     def add_person(self, person):
         if person.age >= 60 or person.priority:
-            self.humans = [person] + self.humans # you can use the insert function
+            self.humans = [person] + self.humans
         else:
             self.humans.append(person)
 
@@ -44,7 +44,7 @@ class Queue:
         print(" - ".join(list_print))
 
     def find_in_queue(self, person):
-        for i, human in enumerate(self.humans): # rather than all this for loop you can use index function to return the index of an object
+        for i, human in enumerate(self.humans):
             if human == person:
                 return i
         print('This person is not in queue!')
@@ -60,7 +60,7 @@ class Queue:
         if len(self.humans) == 0:
             return None
         person = self.humans[0]
-        self.humans = [self.humans[i] for i in range(1, len(self.humans))] # why you are doing that? always we return the object at index 0 so you can do:  self.humans = self.humans[1:]
+        self.humans = self.humans[1:]
         return person
 
     def get_next_blood_type(self, blood_type):
