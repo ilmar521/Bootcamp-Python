@@ -4,22 +4,22 @@ class Door:
     KEYS = 1
 
     @staticmethod
-    def recursion_find_way(door_from, door_to, solve):
-         # try to simplify the function by dividing it to small functions
-        if door_to in door_from.next:
-            if door_to.locked:
-                if Door.KEYS == 0:
-                    return solve
-                Door.KEYS -= 1
-            solve['can_go'] = True
-            solve['way_to_door'] = f"{door_from.name} -- {door_to.name}"
-            return solve
+    def check_locked_door(door):
+        if door.locked:
+            if Door.KEYS == 0:
+                return True
+            Door.KEYS -= 1
+        return False
 
+    @staticmethod
+    def recursion_find_way(door_from, door_to, solve):
         for door in door_from.next:
-            if door.locked:
-                if Door.KEYS == 0:
-                    return solve
-                Door.KEYS -= 1
+            if Door.check_locked_door(door):
+                return solve
+            if door == door_to:
+                solve['can_go'] = True
+                solve['way_to_door'] = f"{door_from.name} -- {door_to.name}"
+                return solve
             Door.recursion_find_way(door, door_to, solve)
             if solve['can_go']:
                 solve['way_to_door'] = f"{door_from.name} -- " + solve['way_to_door']
@@ -38,6 +38,7 @@ class Door:
         return solve
 
 
+d_4_2 = Door('d_4_1', False, [])
 d_4_1 = Door('d_4_1', False, [])
 d_3_2 = Door('d_3_2', True, [d_4_1])
 d_3_1 = Door('d_3_1', False, [])
