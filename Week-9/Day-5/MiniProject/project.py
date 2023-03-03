@@ -85,7 +85,7 @@ class Queue:
         for x in range(len(self.humans)):
             for i in range(1, len(self.humans)):
                 if self.humans[i - 1] in self.humans[i].family and i != len(self.humans) - 1:
-                    self.humans[i], self.humans[i + 1] = self.humans[i + 1], self.humans[i] # here you are doing swap, are you sure this code is working?
+                    self.humans[i], self.humans[i + 1] = self.humans[i + 1], self.humans[i]
 
 
 h1 = Human('H1', 18, False, 'A')
