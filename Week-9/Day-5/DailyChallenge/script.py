@@ -10,6 +10,7 @@ class Airline:
     def __repr__(self):
         return self.name
 
+
 class Airplane:
     ID = 0
 
@@ -66,6 +67,7 @@ class Flight:
 
     def __repr__(self):
         return self.ID
+
 
 class Airport:
 
