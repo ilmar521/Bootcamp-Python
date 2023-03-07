@@ -12,4 +12,8 @@ sampleJson = """{
 }"""
 
 json_sampleJson = json.loads(sampleJson)
-print(json_sampleJson)
+print(json_sampleJson['company']['employee']['payable']['salary'])
+json_sampleJson['company']['employee']['birth_date'] = '1990-05-16'
+with open('json_file.txt', 'w') as f:
+    json.dump(json_sampleJson, f)
+
