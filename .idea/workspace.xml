@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-10/Day-4/ExerciseXP/Ex2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-10/Day-3/ExerciseXP/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-10/Day-4/ExerciseXP/Ex1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-10/Day-4/DailyChallenge/TextAnalyst.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-10/Day-4/DailyChallenge/TextAnalyst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-10/Day-4/DailyChallenge/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-10/Day-4/DailyChallenge/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Bootcamp/Full Stack Coding Bootcamp - Python&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-10/Day-4/DailyChallenge"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4\DailyChallenge" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4" />
     </key>
@@ -53,13 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Commit">
-      <created>1676881918794</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1676881918794</updated>
     </task>
     <task id="LOCAL-00048" summary="Commit">
       <created>1676881933593</created>
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678191738990</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Commit">
+      <created>1678197022367</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1678197022367</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
