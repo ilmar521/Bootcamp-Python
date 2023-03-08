@@ -17,4 +17,3 @@ print(json_sampleJson['company']['employee']['payable']['salary'])
 json_sampleJson['company']['employee']['birth_date'] = '1990-05-16'
 with open('json_file.json', 'w') as f:
     json.dump(json_sampleJson, f, indent=4)
-
