@@ -1,5 +1,6 @@
 import re
 
+
 class Text:
 
     @classmethod
@@ -11,23 +12,19 @@ class Text:
     def __init__(self, text):
         self.text = text
         self.list_of_words = ' '.join(self.text.split()).split(' ')
+        self.set_unique_words = set(self.list_of_words)
+        self.frequency = {}
+        for word in self.set_unique_words:
+            self.frequency[word] = self.list_of_words.count(word)
 
     def frequency_of_word(self):
-        unique_words = set(self.list_of_words)
-        frequency = {}
-        for word in unique_words:
-            frequency[word] = self.list_of_words.count(word)
-        return dict(sorted(frequency.items(), key=lambda item: item[1], reverse=True))
+        return dict(sorted(self.frequency.items(), key=lambda item: item[1], reverse=True))
 
     def unique_words(self):
-        return list(set(self.list_of_words))
+        return self.set_unique_words
 
     def most_common_word(self):
-        unique_words = set(self.list_of_words)
-        frequency = {}
-        for word in unique_words:
-            frequency[word] = self.list_of_words.count(word)
-        return list(dict(sorted(frequency.items(), key=lambda item: item[1], reverse=True)).keys())[0]
+        return list(dict(sorted(self.frequency.items(), key=lambda item: item[1], reverse=True)).keys())[0]
 
 
 class TextModification(Text):
