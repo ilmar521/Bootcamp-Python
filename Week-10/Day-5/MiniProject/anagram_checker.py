@@ -10,7 +10,7 @@ class AnagramChecker:
         if response.status_code != 200:
             raise f'norvig.com return status code {response.status_code}!'
         list_of_words = response.text.split('\n')
-        return AnagramChecker(list_of_words)
+        return cls(list_of_words)
 
     def __init__(self, list_of_words):
         self.list_of_words = list_of_words
