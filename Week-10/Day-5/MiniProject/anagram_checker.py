@@ -10,7 +10,7 @@ class AnagramChecker:
         if response.status_code != 200:
             raise f'norvig.com return status code {response.status_code}!'
         list_of_words = response.text.split('\n')
-        return cls(list_of_words)
+        return AnagramChecker(list_of_words) # use cls instead
 
     def __init__(self, list_of_words):
         self.list_of_words = list_of_words
@@ -22,6 +22,6 @@ class AnagramChecker:
         all_annagrams = set(["".join(perm) for perm in itertools.permutations(analize_word)])
         list_of_annagrams = [word for word in all_annagrams if word.upper() in self.list_of_words and word.upper() != analize_word.upper()]
         return list_of_annagrams
-# missing is_anagram function
+
 
 ins = AnagramChecker.create_instance()
