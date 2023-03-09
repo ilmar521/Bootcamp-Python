@@ -22,6 +22,6 @@ class AnagramChecker:
         all_annagrams = set(["".join(perm) for perm in itertools.permutations(analize_word)])
         list_of_annagrams = [word for word in all_annagrams if word.upper() in self.list_of_words and word.upper() != analize_word.upper()]
         return list_of_annagrams
-
+# missing is_anagram function
 
 ins = AnagramChecker.create_instance()
