@@ -4,7 +4,7 @@ from anagram_checker import AnagramChecker
 def main():
     run_checker = True
     checker = AnagramChecker.create_instance()
-    print("Hi! I'm anagram checker! You can enter any word that you want, and I'll word is it or not, and also show you all anargrams this word.")
+    print("Hi! I'm anagram checker! \nYou can enter any word that you want, and I'll say you is a valid English word or not, and also show you all anargrams of this word.")
     while run_checker:
         user_input = input('\nEnter the word or just enter "q" for finish: ').strip()
         if user_input == 'q':
