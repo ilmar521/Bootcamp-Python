@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-1/script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/Ex1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Full Stack Coding Bootcamp - Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Full Stack Coding Bootcamp - Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,13 +59,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Commit">
-      <created>1677429904915</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1677429904915</updated>
     </task>
     <task id="LOCAL-00066" summary="Commit">
       <created>1677433045187</created>
@@ -399,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678444157562</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Commit">
+      <created>1678638000380</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1678638000380</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
