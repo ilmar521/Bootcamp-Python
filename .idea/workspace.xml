@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-11/Day-2/DailyChallenge/lesson1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-2/DailyChallenge/lesson1/exercises.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-2/DailyChallenge/lesson1/exercises.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-2/DailyChallenge/lesson1/in-this-chapter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-2/DailyChallenge/lesson1/in-this-chapter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-2/ExerciseXP/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -37,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-10/Day-4/DailyChallenge"
@@ -47,6 +50,7 @@
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4\DailyChallenge" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-11\Day-2\ExerciseXP\templates" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4" />
     </key>
   </component>
@@ -58,13 +62,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Commit">
-      <created>1677512950273</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1677512950273</updated>
     </task>
     <task id="LOCAL-00071" summary="Commit">
       <created>1677517859989</created>
@@ -402,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678724775402</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Commit">
+      <created>1678803897651</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1678803897651</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
