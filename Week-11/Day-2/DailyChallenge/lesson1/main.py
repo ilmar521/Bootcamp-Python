@@ -5,7 +5,7 @@ app = flask.Flask(__name__)
 
 
 @app.route('/exercises')
-def blog():
+def exercises():
     with open("exercises.md") as md_obj:
         md_str = md_obj.read()
         html = md.markdown(md_str)
@@ -13,7 +13,7 @@ def blog():
 
 
 @app.route('/lesson')
-def blog_articles():
+def lesson():
     with open("in-this-chapter.md") as md_obj:
         md_str = md_obj.read()
         html = md.markdown(md_str)
