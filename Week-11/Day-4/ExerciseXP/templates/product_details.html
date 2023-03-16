@@ -1,0 +1,46 @@
+ 
+{% extends "index.html" %}
+
+{% block title %}Product details{% endblock %}
+
+{% block title_page %}
+    {{ product['Name'] }}
+{% endblock %}
+
+{% block text_page %}
+    
+    {% if product['Quantity'] > 0 %}
+    <div class="alert alert-success" role="alert">
+        This product is currently available. Order while stocks last!
+    </div>
+    {% else %}
+    <div class="alert alert-danger" role="alert">
+        Sorry - this product currently out of stock!
+    </div>
+    {% endif %}
+
+{% endblock %} 
+
+{% block page_detail %}
+
+
+    <div class="container mt-2">   
+        <div class="card">
+            <div class="card-header">
+                Product deatail
+            </div>
+            <div class="card-body">
+            <p class="card-text">ProductId: {{ product['ProductId'] }}</p>
+            <p class="card-text">Category: {{ product['Category'] }}</p>
+            <p class="card-text">Supplier name: {{ product['SupplierName'] }}</p>
+            <p class="card-text">Weight measure: {{ product['WeightMeasure'] }}</p>
+            <p class="card-text">Description: {{ product['Description'] }}</p>
+            <p class="card-text">Width: {{ product['Width'] }}</p>
+            <p class="card-text">Height: {{ product['Height'] }}</p>
+            <p class="card-text">Quantity: {{ product['Quantity'] }}</p>
+            <p class="card-text">Price: {{ product['Price'] }}</p>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %} 

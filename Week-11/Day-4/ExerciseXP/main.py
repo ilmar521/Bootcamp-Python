@@ -16,8 +16,8 @@ def products_page():
 
 @app.route("/products/<product_id>")
 def product_details_page(product_id):
-    list_product = list(filter(data, ))
-    return flask.render_template('product_details.html')
+    list_product = list(filter(lambda product: product['ProductId'] == product_id, data))
+    return flask.render_template('product_details.html', product=list_product[0])
 
 
 app.run(debug=True)
