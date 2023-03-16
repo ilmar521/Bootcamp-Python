@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/api_poke.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/product_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/MiniProject/templates/products.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -67,13 +64,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Commit">
-      <created>1677611100811</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1677611100811</updated>
     </task>
     <task id="LOCAL-00079" summary="Commit">
       <created>1677643829923</created>
@@ -411,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678974845968</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Commit">
+      <created>1678986918346</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1678986918346</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
