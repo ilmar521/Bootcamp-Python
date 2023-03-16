@@ -1,4 +1,4 @@
-
+ 
 {% extends "index.html" %}
 
 {% block title %}Homepage{% endblock %}
@@ -9,4 +9,30 @@
 
 {% block text_page %}
     The fastest growing online retailer in the west...
-{% endblock %}
+{% endblock %} 
+
+{% block page_detail %}
+<div class="container">
+    <h2 class="text-black">About</h2>
+    <p>We suply a wide range of tech products and accecsories</p>
+    <div class="container ">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+                <ul>
+                    <li>Laptops</li>
+                    <li>Computers</li>
+                    <li>Phones</li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <ul>
+                    <li>Audio equipment</li>
+                    <li>Monitors</li>
+                    <li>Routers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-lg btn-primary w-100" href="{{url_for('products_page')}}" role="button">Check Out Our Products</a>
+</div>
+{% endblock %} 

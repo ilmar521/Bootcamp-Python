@@ -1,0 +1,31 @@
+ 
+{% extends "index.html" %}
+
+{% block title %}Products{% endblock %}
+
+{% block title_page %}
+   Tech Market Products
+{% endblock %}
+
+{% block text_page %}
+    Browse our extensive range of tech products
+{% endblock %} 
+
+{% block page_detail %}
+
+    {% for product in products %}
+        <div class="container mt-2">   
+            <div class="card">
+                <div class="card-header">
+                    {{ product['Name'] }}
+                </div>
+                <div class="card-body">
+                <h5 class="card-title">{{ product['Description'] }}</h5>
+                <p class="card-text">{{ product['Description'] }}</p>
+                <a href="{{url_for('product_details_page', product_id=product['ProductId']}}" class="btn btn-primary">More details</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    
+{% endblock %} 
