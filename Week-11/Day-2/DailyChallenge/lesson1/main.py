@@ -9,7 +9,7 @@ def exercises():
     with open("exercises.md") as md_obj:
         md_str = md_obj.read()
         html = md.markdown(md_str)
-        return html
+        return html # there is no need for a new variable you can just do return markdown.markdown(md)
 
 
 @app.route('/lesson')
