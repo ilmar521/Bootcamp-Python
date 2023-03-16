@@ -5,6 +5,20 @@
 
 {% block page_detail %}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+            $(function() {
+              $('a.add_button').bind('click', function(e) {
+                e.preventDefault()
+                $.getJSON('/add_product_to_cart_from_products/' + e.target.id,
+                    function(data) {
+                  //do nothing
+                });
+                return false;
+              });
+            });
+    </script>
+
     <div class="container">
         <h2>Products</h2>
     </div>
@@ -18,7 +32,7 @@
                 <p class="card-text">Price: {{ product['Price'] }}</p>
                 <a href="{{url_for('product_details_page', product_id=product['ProductId'])}}">See item details</a>
                 <br>
-                <a href="{{url_for('product_details_page', product_id=product['ProductId'])}}" class="btn btn-primary">Add to cart</a>
+                <a href="#" id='{{product["ProductId"]}}' class="add_button btn btn-primary">Add to cart</a>
                 </div>
             </div>
         </div>

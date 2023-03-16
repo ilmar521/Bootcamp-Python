@@ -1,0 +1,25 @@
+
+{% extends "index.html" %}
+
+{% block title %}Cart{% endblock %}
+
+{% block page_detail %}
+
+    <div class="container">
+        <h2>User Cart</h2>
+        <ul class="list-group">
+            <li class="list-group-item fs-4">Items cart</li>
+          
+            {% for product in cart_items %}
+            <li class="list-group-item">
+                item: {{product['Name']}}. Price: {{product['Price']}}
+                <br>
+                <a href="{{url_for('delete_product_page', product_id=product['ProductId'])}}" class="btn btn-primary bg-warning border-warning">Remove</a>
+            </li>
+            {% endfor %}
+
+            <li class="list-group-item fs-4">Total: {{total}}</li>
+        </ul>
+    </div>
+
+{% endblock %} 

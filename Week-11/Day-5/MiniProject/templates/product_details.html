@@ -40,6 +40,8 @@
             <p class="card-text">Height: {{ product['Height'] }}</p>
             <p class="card-text">Quantity: {{ product['Quantity'] }}</p>
             <p class="card-text">Price: {{ product['Price'] }}</p>
+            <br>
+            <a href="{{url_for('add_product_page', product_id=product['ProductId'])}}" class="btn btn-primary">Add to cart</a>
             </div>
         </div>
     </div>
