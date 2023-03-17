@@ -8,16 +8,14 @@ app = flask.Flask(__name__)
 def exercises():
     with open("exercises.md") as md_obj:
         md_str = md_obj.read()
-        html = md.markdown(md_str)
-        return html # there is no need for a new variable you can just do return markdown.markdown(md)
+        return md.markdown(md_str)
 
 
 @app.route('/lesson')
 def lesson():
     with open("in-this-chapter.md") as md_obj:
         md_str = md_obj.read()
-        html = md.markdown(md_str)
-        return html
+        return md.markdown(md_str)
 
 
 app.run()
