@@ -1,6 +1,7 @@
 import flask
-from app import app    # app.app is package_name.variable_name
+from app import app
+
 
 @app.route("/")
 def index():
-    pass
+    return flask.render_template_string('products')
