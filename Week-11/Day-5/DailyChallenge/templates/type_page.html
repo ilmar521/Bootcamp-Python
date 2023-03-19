@@ -1,0 +1,20 @@
+
+{% extends "index.html" %}
+
+{% block title %}Page about {{ type_name }} type {% endblock %}
+
+
+{% block page_detail %}
+
+    {% for pokemon in pokemons %}
+        <div class="container mt-2">
+            <div class="card">
+                <img src="{{ pokemon['img'] }}" class="card-img-top w-25">
+                <div class="card-body">
+                <h5 class="card-title">{{ pokemon['name'] }}</h5>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
