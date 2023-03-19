@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/secret_key.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +61,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Commit">
-      <created>1677784360633</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1677784360633</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Commit">
-      <created>1677822689272</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1677822689272</updated>
     </task>
     <task id="LOCAL-00088" summary="Commit">
       <created>1677854178271</created>
@@ -406,7 +391,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679245384459</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Commit">
+      <created>1679245656164</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1679245656164</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Commit">
+      <created>1679245757438</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1679245757438</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
