@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pokemon {{name_poke}}</title>
-</head>
-<body>
 
-</body>
-</html>
+{% extends "index.html" %}
+
+{% block title %}Pokemon {{ poke_data['name'] }}{% endblock %}
+
+
+{% block page_detail %}
+    <div class="container mt-2">
+        <div class="card">
+            <img src="{{ poke_data['img'] }}" class="card-img-top w-25">
+            <div class="card-body">
+            <h5 class="card-title">{{ poke_data['name'] }}</h5>
+            </div>
+        </div>
+    </div>
+{% endblock %}
