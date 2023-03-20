@@ -1,6 +1,7 @@
 import flask
 import api_poke
 from flask import request
+current_page = 1
 
 app = flask.Flask(__name__)
 
@@ -36,6 +37,24 @@ def pokemon_type(type):
     if poke_data['success']:
         return flask.render_template('type_page.html', poke_data=poke_data['pokes'], type_name=type)
     return flask.redirect(flask.url_for('all_types_page.html'))
+
+
+@app.route("/pokemons/all")
+def all_pokemons():
+    global current_page
+    direction = request.args.get('direction')
+    try:
+        current_page += int(direction)
+    except:
+        current_page = 1
+
+    if current_page == 0:
+        current_page = 1
+
+    poke_data = api_poke.get_all_pokemon(current_page)
+    if poke_data['success']:
+        return flask.render_template('all_pokemons.html', poke_data=poke_data['data'])
+    return flask.redirect(flask.url_for('main.html'))
 
 
 app.run(debug=True)

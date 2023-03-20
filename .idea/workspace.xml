@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/all_pokemons.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/api_poke.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/api_poke.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/type_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/type_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Commit">
-      <created>1678039786329</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1678039786329</updated>
     </task>
     <task id="LOCAL-00093" summary="Commit">
       <created>1678042360382</created>
@@ -407,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679297989380</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Commit">
+      <created>1679323070242</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1679323070242</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -2,13 +2,20 @@ import requests
 import json
 
 
-def get_all_pokemon():
-    data = []
-    for i in range(10):
-        response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{i}')
-        if response.status_code == 200:
-            data.append({'name':response.json()['species']['name'], 'img':response.json()['sprites']['front_default']})
-    print(data)
+def get_all_pokemon(current_page):
+    params = {}
+    params["limit"] = 12
+    params["offset"] = (current_page - 1) * 12
+    response = requests.get('https://pokeapi.co/api/v2/pokemon/', params=params)
+    if response.status_code == 200:
+        data = response.json()
+        return_data = []
+        for poke in data['results']:
+            response_poke = requests.get(poke['url'])
+            return_data.append({'name': response_poke.json()['species']['name'], 'img': response_poke.json()['sprites']['front_default']})
+        return {'success': True, 'data': return_data}
+    return {'success': False}
+
 
 
 def get_pokemon(var):
@@ -32,3 +39,7 @@ def get_pokemon_by_type(url_type):
         data = response.json()
         return {'success': True, 'pokes': [poke['pokemon']['name'] for poke in data["pokemon"]]}
     return {'success': False}
+
+
+get_all_pokemon(2)
+
