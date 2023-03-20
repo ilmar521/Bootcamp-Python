@@ -25,12 +25,12 @@ def get_types_pokemon():
     return {'success':False}
 
 
-def get_pokemon_by_type(type):
-    response = requests.get(f'https://pokeapi.co/api/v2/type/{type}')
+def get_pokemon_by_type(url_type):
+    response = requests.get(url_type)
     if response.status_code == 200:
-        return {'success':True, 'name': response.json()['species']['name'], 'img': response.json()['sprites']['front_default']}
+        data = response.json()
+        return {'success':True, 'pokes': [poke['pokemon']['name'] for poke in data["pokemon"]]}
     return {'success':False}
 
-
-print(get_types_pokemon())
-get_pokemon_by_type('4')
+#
+# get_pokemon_by_type('https://pokeapi.co/api/v2/type/2/')

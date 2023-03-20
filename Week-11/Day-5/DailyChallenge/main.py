@@ -1,5 +1,6 @@
 import flask
 import api_poke
+from flask import request
 
 app = flask.Flask(__name__)
 
@@ -30,9 +31,10 @@ def pokemon_name(name):
 
 @app.route("/pokemons/bytype/<type>")
 def pokemon_type(type):
-    poke_data = api_poke.get_pokemon_by_type(type)
+    url_type = request.args.get('url_type')
+    poke_data = api_poke.get_pokemon_by_type(url_type)
     if poke_data['success']:
-        return flask.render_template('type_page.html', poke_data=poke_data, type=type)
+        return flask.render_template('type_page.html', poke_data=poke_data['pokes'], type_name=type)
     return flask.redirect(flask.url_for('all_types_page.html'))
 
 

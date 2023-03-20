@@ -6,12 +6,11 @@
 
 {% block page_detail %}
 
-    {% for pokemon in pokemons %}
+    {% for pokemon in poke_data %}
         <div class="container mt-2">
             <div class="card">
-                <img src="{{ pokemon['img'] }}" class="card-img-top w-25">
                 <div class="card-body">
-                <h5 class="card-title">{{ pokemon['name'] }}</h5>
+                    <h5 class="card-title"><a href="{{url_for('pokemon_name', name=pokemon)}}">{{ pokemon }}</a></h5>
                 </div>
             </div>
         </div>

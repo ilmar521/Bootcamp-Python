@@ -10,7 +10,7 @@
         <div class="container mt-2">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="{{url_for('pokemon_type', type=type)}}">{{ type }}</a>></h5>
+                    <h5 class="card-title"><a href="{{url_for('pokemon_type', type=type['name'], url_type=type['url'])}}">{{ type['name'] }}</a></h5>
                 </div>
             </div>
         </div>
