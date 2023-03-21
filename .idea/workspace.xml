@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/DailyChallenge/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/DailyChallenge/app/forms.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,34 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Commit">
-      <created>1678197022367</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1678197022367</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Commit">
-      <created>1678207603211</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1678207603211</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Commit">
-      <created>1678209416602</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1678209416602</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Commit">
-      <created>1678211116128</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1678211116128</updated>
     </task>
     <task id="LOCAL-00100" summary="Commit">
       <created>1678211291861</created>
@@ -411,7 +382,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679413345198</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="Commit">
+      <created>1679421858165</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1679421858165</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Commit">
+      <created>1679421989207</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1679421989207</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Commit">
+      <created>1679422079264</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1679422079264</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Commit">
+      <created>1679423943630</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1679423943630</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
