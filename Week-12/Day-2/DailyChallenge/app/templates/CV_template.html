@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>CV</title>
+</head>
+<body>
+    <div class="main">
+        <div id="left-div">
+            <div class="name">
+                <img src="" alt="">
+                <h1>{{ data['name'] }}</h1>
+                <p>{{ data['profession'] }}</p>
+                <hr>
+            </div>
+            <div class="contact">
+                <p>{{ data['phone'] }}</p>
+                <p>{{ data['email'] }}</p>
+                <p>{{ data['address'] }}</p>
+            </div>
+            <hr>
+            <div class="contact-pict">
+                <a href="{{ data['LinkedIn'] }}"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <p>LinkedIn</p>
+                <a href="{{ data['Github'] }}"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <p>Github</p>
+                <a href="{{ data['Facebook'] }}"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <p>Facebook</p>
+            </div>
+        </div>
+        <div id="right-div">
+            <div class="about">
+                <h2>About me</h2>
+                <p>{{ data['About'] }}</p>
+            </div>
+            <div class="experience">
+                <h2>WORK EXPERIENCES</h2>
+                <p class="experience-title">{{ data['position'] }}</p>
+                <p>{{ data['period'] }}</p>
+                   <ul>
+                        <li>{{ data['responsibilities'] }}</li>
+                    </ul>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <p>{{ data['university'] }}</p>
+                <p>{{ data['graduate'] }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
