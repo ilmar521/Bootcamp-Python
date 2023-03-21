@@ -1,0 +1,38 @@
+[
+    {
+        "name": "55",
+        "country": "555",
+        "number_of_inhabitants": 55,
+        "area": 66.0
+    },
+    {
+        "name": "ghgh",
+        "country": "ghg",
+        "number_of_inhabitants": 556,
+        "area": 6666.0
+    },
+    {
+        "name": "465",
+        "country": "66",
+        "number_of_inhabitants": 56,
+        "area": 66.0
+    },
+    {
+        "name": "tyt",
+        "country": "tyty",
+        "number_of_inhabitants": 66,
+        "area": 66.0
+    },
+    {
+        "name": "\u043d\u0435\u043d\u0435",
+        "country": "\u0435\u043d\u0435\u043d",
+        "number_of_inhabitants": 6,
+        "area": 66.0
+    },
+    {
+        "name": "\u0433\u043d\u0433\u043d",
+        "country": "777",
+        "number_of_inhabitants": 777,
+        "area": 777.0
+    }
+]

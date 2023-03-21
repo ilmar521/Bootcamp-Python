@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.username.label }}
+        {{ form.username(size=32) }}
+
+        <br>
+        <br>
+
+        {{ form.mail.label }}
+        {{ form.mail(size=32) }}
+
+        <br>
+        <br>
+
+        {{ form.password.label }}
+        {{ form.password(size=32) }}
+
+        <br>
+        <br>
+
+        {{ form.bio.label }}
+        {{ form.bio(size=240) }}
+
+        <br>
+        <br>
+
+        {{ form.submit() }}
+
+        {% for error in form.errors.items() %}
+            {{ error[1][0] }}
+        {% endfor %}
+
+
+    </form>
+</body>
+</html>

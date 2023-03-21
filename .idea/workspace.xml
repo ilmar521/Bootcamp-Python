@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/all_pokemons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/static/cities_around_the_world.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/templates/add_city.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/api_poke.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/api_poke.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/type_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-11/Day-5/DailyChallenge/templates/type_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-12/Day-2/ExerciseXP/app/routes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +45,24 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-11/Day-5/DailyChallenge/templates",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-12/Day-2/ExerciseXP",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-11\Day-5\DailyChallenge\templates" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-11\Day-5\MiniProject" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-11\Day-4\ExerciseXP" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4\DailyChallenge" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP\app\static" />
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP\app" />
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP" />
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-11\Day-2\ExerciseXP\templates" />
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-10\Day-4" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Commit">
-      <created>1678042360382</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1678042360382</updated>
     </task>
     <task id="LOCAL-00094" summary="Commit">
       <created>1678084928794</created>
@@ -410,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679323070242</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Commit">
+      <created>1679328464267</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1679328464268</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,6 +469,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Week-10/Day-4/ExerciseXP/Ex2.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
