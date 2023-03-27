@@ -23,7 +23,7 @@ from app import models, routes
 #         with open(filename, 'r') as f:
 #             data = json.load(f)
 #             for user in data:
-#                 user_inst = models.User(id=user['id'], name=user['name'], street=user['address']['street'], zipcode=user['address']['zipcode'])
+#                 user_inst = models.User(id=user['id'], name=user['name'], street=user['address']['street'], city=user['address']['city'], zipcode=user['address']['zipcode'])
 #                 db.session.add(user_inst)
 #                 db.session.commit()
 #
