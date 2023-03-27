@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-2/MiniProject/app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Commit">
-      <created>1678442839819</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1678442839819</updated>
     </task>
     <task id="LOCAL-00113" summary="Commit">
       <created>1678444157562</created>
@@ -412,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679853074420</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Commit">
+      <created>1679920590518</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1679920590518</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

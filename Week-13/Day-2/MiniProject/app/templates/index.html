@@ -2,76 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add city</title>
+    <title>Users</title>
 </head>
 <body>
-    <form method="POST">
-        {{ form.hidden_tag() }}
-        <h2>Main section</h2> <br>
-        {{ form.name.label }}
-        {{ form.name(size=32) }}
-        <br>
-        <br>
-        {{ form.profession.label }}
-        {{ form.profession(size=32) }}
-        <br>
-        <br>
-        {{ form.phone.label }}
-        {{ form.phone(size=32) }}
-        <br>
-        <br>
-        {{ form.email.label }}
-        {{ form.email(size=32) }}
-        <br>
-        <br>
-        {{ form.address.label }}
-        {{ form.address(size=32) }}
-        <br>
-        <br>
-        {{ form.LinkedIn.label }}
-        {{ form.LinkedIn(size=60) }}
-        <br>
-        <br>
-        {{ form.Github.label }}
-        {{ form.Github(size=60) }}
-        <br>
-        <br>
-        {{ form.Facebook.label }}
-        {{ form.Facebook(size=60) }}
-        <br>
-        <br>
-        <h2>About and work experience</h2> <br>
-        {{ form.About.label }}
-        {{ form.About(size=1000) }}
-        <br>
-        <br>
-        {{ form.position.label }}
-        {{ form.position(size=60) }}
-        <br>
-        <br>
-        {{ form.period.label }}
-        {{ form.period(size=60) }}
-        <br>
-        <br>
-        {{ form.responsibilities.label }}
-        {{ form.responsibilities(size=1000) }}
-        <br>
-        <br>
-        <h2>Education</h2> <br>
-        {{ form.university.label }}
-        {{ form.university(size=60) }}
-        <br>
-        <br>
-        {{ form.graduate.label }}
-        {{ form.graduate(size=32) }}
-        <br>
-        <br>
-        {{ form.submit() }}
-
-        {% for error in form.errors.items() %}
-            {{ error[1][0] }}
+    <div>
+        <p>All users</p>
+        {% for user in users['first'] %}
+            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
         {% endfor %}
+    </div>
 
-    </form>
+    <br>
+
+    <div>
+        <p>Users who live(s) in “Roscoeview”</p>
+        {% for user in users['second'] %}
+            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
+        {% endfor %}
+    </div>
+
+    <br>
+
+    <div>
+        <p>First 5 users</p>
+        {% for user in users['third'] %}
+            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
+        {% endfor %}
+    </div>
+
+    <br>
+
+    <div>
+        <p>Users which zipcode starts with the number 5</p>
+        {% for user in users['fourth'] %}
+            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
+        {% endfor %}
+    </div>
+
 </body>
 </html>
