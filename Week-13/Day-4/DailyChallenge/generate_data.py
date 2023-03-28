@@ -1,18 +1,23 @@
 import faker
 from app import flask_app, db
 from app.models import Person, Phonenumber
+import random
 
-fake = faker.Faker()
 
-# def populate():
-#     with flask_app.app_context():
-#         filename = os.path.join(flask_app.static_folder, 'users.json')
-#         with open(filename, 'r') as f:
-#             data = json.load(f)
-#             for user in data:
-#                 user_inst = models.User(id=user['id'], name=user['name'], street=user['address']['street'], city=user['address']['city'], zipcode=user['address']['zipcode'])
-#                 db.session.add(user_inst)
-#                 db.session.commit()
-#
-#
-# populate()
+def generate():
+    fake = faker.Faker()
+    list_persons = []
+    list_phones = []
+    for i in range(20):
+        list_persons.append(Person(name=fake.name(), email='', address=fake.address()))
+    for i in range(30):
+        list_phones.append(Phonenumber(number=fake.phone_number(), person=random.choice(list_persons)))
+
+    with flask_app.app_context():
+        db.session.add_all(list_persons)
+        db.session.add_all(list_phones)
+        db.session.commit()
+
+
+generate()
+

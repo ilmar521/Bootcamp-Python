@@ -2,40 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Users</title>
+    <title>Phone Number</title>
 </head>
 <body>
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
     <div>
-        <p>All users</p>
-        {% for user in users['first'] %}
-            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
+        <p>User info</p>
+        {% for user in users %}
+            <p>Name:{{user['name']}} | Street:{{user['address']}} | E-mail:{{user['email']}}</p>
         {% endfor %}
-    </div>
-
-    <br>
-
-    <div>
-        <p>Users who live(s) in “Roscoeview”</p>
-        {% for user in users['second'] %}
-            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
-        {% endfor %}
-    </div>
-
-    <br>
-
-    <div>
-        <p>First 5 users</p>
-        {% for user in users['third'] %}
-            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
-        {% endfor %}
-    </div>
-
-    <br>
-
-    <div>
-        <p>Users which zipcode starts with the number 5</p>
-        {% for user in users['fourth'] %}
-            <p>Name:{{user['name']}} | Street:{{user['street']}} | City:{{user['city']}} | Zipcode:{{user['zipcode']}}</p>
+        <br>
+        <p>Phones</p>
+        {% for phone in phones %}
+            <p>phone number: {{phone['number']}}</p>
         {% endfor %}
     </div>
 
