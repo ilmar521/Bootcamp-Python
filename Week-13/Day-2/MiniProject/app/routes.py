@@ -38,9 +38,9 @@ def add_user_page():
 
     if my_form.validate_on_submit():
         name = my_form.name.data
-        street = my_form.name.data
-        city = my_form.name.data
-        zipcode = my_form.name.data
+        street = my_form.street.data
+        city = my_form.city.data
+        zipcode = my_form.zipcode.data
         user_inst = User(name=name, street=street, city=city, zipcode=zipcode, status='client')
         db.session.add(user_inst)
         db.session.commit()
