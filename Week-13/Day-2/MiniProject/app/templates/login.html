@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    {% for category, message in get_flashed_messages(with_categories=True) %}
+        <p class="alert-{{category}}">{{ message }}</p>
+    {% endfor %}
+    <br>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <h2>Enter your name</h2> <br>
+        {{ form.name.label }}
+        {{ form.name(size=50) }}
+        <br>
+        <br>
+        {{ form.submit() }}
+
+        {% for error in form.errors.items() %}
+            {{ error[1][0] }}
+        {% endfor %}
+    </form>
+</body>
+</html>
