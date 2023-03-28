@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <h2>Add new user</h2> <br>
+        {{ form.name.label }}
+        {{ form.name(size=50) }}
+        <br>
+        {{ form.street.label }}
+        {{ form.street(size=150) }}
+        <br>
+        {{ form.city.label }}
+        {{ form.city(size=50) }}
+        <br>
+        {{ form.zipcode.label }}
+        {{ form.zipcode(size=20) }}
+        <br>
+        {{ form.submit() }}
+
+        {% for error in form.errors.items() %}
+            {{ error[1][0] }}
+        {% endfor %}
+    </form>
+</body>
+</html>

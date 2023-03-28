@@ -1,7 +1,7 @@
 import flask
-from app import flask_app
+from app import flask_app, db
 from app.models import User
-from app.forms import FormLogin
+from app.forms import FormLogin, AddForm
 from flask import flash
 
 
@@ -34,5 +34,16 @@ def login_page():
 
 @flask_app.route("/add_user", methods=("GET", "POST"))
 def add_user_page():
-    pass
+    my_form = AddForm()
+
+    if my_form.validate_on_submit():
+        name = my_form.name.data
+        street = my_form.name.data
+        city = my_form.name.data
+        zipcode = my_form.name.data
+        user_inst = User(name=name, street=street, city=city, zipcode=zipcode, status='client')
+        db.session.add(user_inst)
+        db.session.commit()
+        return flask.redirect(flask.url_for('index'))
+    return flask.render_template("add_user.html", form=my_form)
 
