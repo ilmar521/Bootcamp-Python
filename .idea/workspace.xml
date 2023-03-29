@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +44,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-13/Day-4/DailyChallenge",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-13/Day-4/MiniProject/app",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-4\MiniProject\app" />
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-4\MiniProject" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-4\DailyChallenge" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-2\MiniProject\app\templates" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-2\MiniProject" />
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\DailyChallenge" />
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-2\MiniProject\app\static" />
@@ -66,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00122" summary="Commit">
-      <created>1678811935749</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1678811935749</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Commit">
-      <created>1678816895605</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1678816895606</updated>
     </task>
     <task id="LOCAL-00124" summary="Commit">
       <created>1678970145929</created>
@@ -410,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680026665545</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Commit">
+      <created>1680079555726</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1680079555726</updated>
+    </task>
+    <task id="LOCAL-00172" summary="Commit">
+      <created>1680080380543</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1680080380543</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
