@@ -1,6 +1,6 @@
 import flask
 from app import flask_app, db
-from app.models import Person, Phonenumber
+# from app.models import Person, Phonenumber
 from flask import flash
 
 
