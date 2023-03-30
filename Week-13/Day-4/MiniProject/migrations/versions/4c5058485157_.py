@@ -27,12 +27,12 @@ def upgrade():
     sa.Column('name', sa.String(length=150), nullable=True),
     sa.Column('gender', sa.String(length=1), nullable=True),
     sa.Column('breed', sa.String(length=150), nullable=True),
-    sa.Column('date_of_birth', sa.Text(), nullable=True),
-    sa.Column('details', sa.DateTime(), nullable=True),
+    sa.Column('date_of_birth', sa.DateTime(), nullable=True),
+    sa.Column('details', sa.Text(), nullable=True),
     sa.Column('price', sa.Integer(), nullable=True),
     sa.Column('image', sa.String(length=250), nullable=True),
-    sa.Column('cart', sa.Integer(), nullable=True),
-    sa.ForeignKeyConstraint(['cart'], ['cart.id'], ),
+    sa.Column('cart_id', sa.Integer(), nullable=True),
+    sa.ForeignKeyConstraint(['cart_id'], ['cart.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
     # ### end Alembic commands ###

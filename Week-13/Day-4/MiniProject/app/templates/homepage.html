@@ -8,26 +8,29 @@
     <div class="container">
         <h1>Welcome to our pets store!</h1>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-            <div class="container mt-2">
-                <div class="card">
-                    <img src="{{url_for('static', filename='img/our-pets.jpg')}}" class="card-img-top w-25">
-                    <div class="card-body">
-                    <a href="{{url_for('pets_page')}}">View our pets</a>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="container mt-2">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="{{url_for('static', filename='img/our-pets.jpg')}}" class="card-img-top w-50">
+                        </div>
+                        <a href="{{url_for('pets_page')}}" class="add_button btn btn-primary w-auto">View our pets</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="container mt-2">
-                <div class="card">
-                    <img src="{{url_for('static', filename='img/your-cart.jpg')}}" class="card-img-top w-25">
-                    <div class="card-body">
-                    <a href="{{url_for('cart_page')}}">View your cart</a>
+            <div class="col">
+                <div class="container mt-2">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="{{url_for('static', filename='img/your-cart.jpg')}}" class="card-img-top w-50">
+                        </div>
+                        <a href="{{url_for('cart_page')}}" class="add_button btn btn-primary w-auto">View your cart</a>
                     </div>
                 </div>
             </div>
-        </div>
-   </div>
+       </div>
+    </div>
+
 {% endblock %} 

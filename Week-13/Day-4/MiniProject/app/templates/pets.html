@@ -23,20 +23,24 @@
         <h2>Our pets</h2>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-    {% for pet in pets %}
-        <div class="col">
-            <div class="container mt-2">
-                <div class="card">
-                    <img src="{{url_for('static', filename=pet['image'])}}" class="card-img-top w-25">
-                    <div class="card-body">
-                    <h5 class="card-title">{{ pet['name'] }}</h5>
-                    <p class="card-text">Price: {{ product['price'] }}</p>
-                    <a href="{{url_for('product_details_page', product_id=product['ProductId'])}}">View details</a>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for pet in pets %}
+            <div class="col">
+                <div class="container mt-2">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="{{url_for('static', filename=pet['image'])}}" class="card-img-top w-50">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ pet['name'] }}</h5>
+                                <p class="card-text">Price: {{ pet['price'] }}</p>
+                                <a href="{{url_for('pet_details_page', pet_id=pet['id'])}}" class="btn btn-primary">View details</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        {% endfor %}
         </div>
-    {% endfor %}
     </div>
 {% endblock %} 

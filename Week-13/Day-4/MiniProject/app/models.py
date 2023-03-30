@@ -7,11 +7,11 @@ class Pet(db.Model):
     name = db.Column(db.String(150))
     gender = db.Column(db.String(1))
     breed = db.Column(db.String(150))
-    date_of_birth = db.Column(db.Text)
-    details = db.Column(db.DateTime, default=datetime.datetime.now())
+    date_of_birth = db.Column(db.DateTime, default=datetime.datetime.now())
+    details = db.Column(db.Text)
     price = db.Column(db.Integer)
     image = db.Column(db.String(250))
-    cart = db.Column(db.Integer, db.ForeignKey('cart.id'))
+    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id'))
 
 
 class Cart(db.Model):
