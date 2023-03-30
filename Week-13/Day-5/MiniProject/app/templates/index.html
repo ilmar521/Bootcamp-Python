@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do</title>
+</head>
+<body>
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
+    <div>
+        <p>Nationalities</p>
+        {% for nationality in nationalities %}
+            <p>nationality: {{nationality['name']}}</p>
+        {% endfor %}
+        <br>
+        <p>User info</p>
+        {% for user in users %}
+            <p>Name:{{user['name']}} | Street:{{user['address']}} | E-mail:{{user['email']}}</p>
+        {% endfor %}
+        <br>
+        <p>Phones</p>
+        {% for phone in phones %}
+            <p>phone number: {{phone['number']}}</p>
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>
