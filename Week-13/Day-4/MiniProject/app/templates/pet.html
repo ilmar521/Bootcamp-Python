@@ -27,21 +27,20 @@
     <div class="container mt-2">   
         <div class="card">
             <div class="card-header">
-                Product detail
+                Pet detail
             </div>
-            <img src="{{url_for('static', filename=product['ProductPicUrl'])}}" class="card-img-top w-50">
-            <div class="card-body">
-            <p class="card-text">ProductId: {{ product['ProductId'] }}</p>
-            <p class="card-text">Category: {{ product['Category'] }}</p>
-            <p class="card-text">Supplier name: {{ product['SupplierName'] }}</p>
-            <p class="card-text">Weight measure: {{ product['WeightMeasure'] }}</p>
-            <p class="card-text">Description: {{ product['Description'] }}</p>
-            <p class="card-text">Width: {{ product['Width'] }}</p>
-            <p class="card-text">Height: {{ product['Height'] }}</p>
-            <p class="card-text">Quantity: {{ product['Quantity'] }}</p>
-            <p class="card-text">Price: {{ product['Price'] }}</p>
-            <br>
-            <a href="{{url_for('add_product_page', product_id=product['ProductId'])}}" class="btn btn-primary">Add to cart</a>
+            <div class="text-center">
+                <img src="{{url_for('static', filename=pet['image'])}}" class="card-img-top w-75">
+                <div class="card-body">
+                <p class="card-text">Name: {{ pet['name'] }}</p>
+                <p class="card-text">Gender: {{ pet['gender'] }}</p>
+                <p class="card-text">Breed: {{ pet['breed'] }}</p>
+                <p class="card-text">Date of birth: {{ pet['date_of_birth'] }}</p>
+                <p class="card-text">Details: {{ pet['details'] }}</p>
+                <p class="card-text">Price: {{ pet['Price'] }}</p>
+                <br>
+                <a href="{{url_for('add_pet_page', pet_id=pet['id'])}}" class="btn btn-primary">Add to cart</a>
+                </div>
             </div>
         </div>
     </div>

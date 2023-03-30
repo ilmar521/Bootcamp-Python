@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/shop.db" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/shop.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pet.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/app/templates/pets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/migrations/versions/4c5058485157_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-4/MiniProject/migrations/versions/4c5058485157_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00127" summary="Commit">
-      <created>1678986918346</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1678986918346</updated>
     </task>
     <task id="LOCAL-00128" summary="Commit">
       <created>1678989684064</created>
@@ -418,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680111146403</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Commit">
+      <created>1680161951807</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1680161951807</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

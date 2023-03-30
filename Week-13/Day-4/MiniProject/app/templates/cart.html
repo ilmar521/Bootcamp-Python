@@ -12,9 +12,9 @@
           
             {% for product in cart_items %}
             <li class="list-group-item">
-                item: {{product['Name']}}. Price: {{product['Price']}}
+                <span class="fs-5">Pet: {{product['name']}}.  Price: {{product['price']}}</span>
                 <br>
-                <a href="{{url_for('delete_product_page', product_id=product['ProductId'])}}" class="btn btn-primary bg-warning border-warning">Remove</a>
+                <a href="{{url_for('delete_pet_page', pet_id=product['id'])}}" class="btn btn-primary bg-warning border-warning mt-2">Remove</a>
             </li>
             {% endfor %}
 

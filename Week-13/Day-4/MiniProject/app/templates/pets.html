@@ -19,6 +19,14 @@
 <!--            });-->
 <!--    </script>-->
 
+    <div class="container mt-2">
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-success" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+    </div>
+
     <div class="container">
         <h2>Our pets</h2>
     </div>
