@@ -10,18 +10,17 @@
 </head>
 <body style="background-color: rgb(253, 147, 108);">
 
-<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-<!--    <script type=text/javascript>-->
-<!--            $(function() {-->
+<!--   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--   <script type=text/javascript>-->
+<!--          $(function() {-->
 <!--              $('input.checkbox-task').bind('click', function(e) {-->
-<!--                e.preventDefault();-->
-<!--                e.target.checked = not e.target.checked;-->
-<!--                $.getJSON('/complete/' + e.target.id,-->
-<!--                    function(data) {-->
-<!--                  //do nothing-->
-<!--                });-->
-<!--                return false;-->
-<!--              });-->
+<!--               e.preventDefault();-->
+<!--               $.getJSON('/complete/' + e.target.id,-->
+<!--                  function(data) {-->
+<!--                 //do nothing-->
+<!--               });-->
+<!--              return false;-->
+<!--             });-->
 <!--            });-->
 <!--    </script>-->
 
@@ -31,7 +30,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
         </div>
     </nav>
     
@@ -44,7 +43,7 @@
         <div class="container-fluid d-flex justify-content-start w-50">
             <form method="POST" class="input-group mb-3 mt-4">
                 <input name="task-name" type="text" class="form-control" placeholder="new task" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">ADD</button>     
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">ADD</button>
             </form>
         </div>
 
@@ -53,10 +52,17 @@
             <div class="d-flex mt-1">
                 <a href="{{url_for('delete', todo_id=task['id'])}}"><button class="btn btn-danger me-1 d-flex align-items-center ps-2 pe-3" type="submit" style="width:5px; height: 25px;">X</button></a>
                 <div class="form-check">
-                    <input class="form-check-input checkbox-task" type="checkbox" value="" id="{{task['id']}}">
+                    {% if task['completed'] %}
+                    <a href="{{url_for('complete', todo_id=task['id'])}}" class="form-check-input checkbox-task checked"  type="checkbox" value="" id="{{task['id']}}"></a>
+                    <label class="form-check-label text-decoration-line-through" for="flexCheckDefault">
+                        {{ task['details'] }}
+                    </label>
+                    {% else %}
+                    <a href="{{url_for('complete', todo_id=task['id'])}}" class="form-check-input checkbox-task"  type="checkbox" value="" id="{{task['id']}}"></a>
                     <label class="form-check-label" for="flexCheckDefault">
                         {{ task['details'] }}
                     </label>
+                    {% endif %}
                 </div>            
             </div>
             {% endfor %}

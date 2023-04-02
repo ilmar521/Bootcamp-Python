@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/schedule.db" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/schedule.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-13/Day-5/MiniProject/app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Commit">
-      <created>1679245757438</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1679245757438</updated>
     </task>
     <task id="LOCAL-00137" summary="Commit">
       <created>1679246149062</created>
@@ -415,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680415600772</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Commit">
+      <created>1680423042263</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1680423042263</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
