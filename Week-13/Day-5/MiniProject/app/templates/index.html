@@ -10,6 +10,21 @@
 </head>
 <body style="background-color: rgb(253, 147, 108);">
 
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--    <script type=text/javascript>-->
+<!--            $(function() {-->
+<!--              $('input.checkbox-task').bind('click', function(e) {-->
+<!--                e.preventDefault();-->
+<!--                e.target.checked = not e.target.checked;-->
+<!--                $.getJSON('/complete/' + e.target.id,-->
+<!--                    function(data) {-->
+<!--                  //do nothing-->
+<!--                });-->
+<!--                return false;-->
+<!--              });-->
+<!--            });-->
+<!--    </script>-->
+
     <nav class="navbar navbar-expand-lg bg-danger bg-gradient">
         <div class="container">
             <a class="navbar-brand fs-3 text-light" href="#">TO DO list</a>
@@ -27,23 +42,24 @@
     {% endfor %}   
     <div class="container-fluid d-flex flex-column align-items-center">
         <div class="container-fluid d-flex justify-content-start w-50">
-            <div class="input-group mb-3 mt-4">
-                <input type="text" class="form-control" placeholder="new task" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">ADD</button>
-            </div>
+            <form method="POST" class="input-group mb-3 mt-4">
+                <input name="task-name" type="text" class="form-control" placeholder="new task" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">ADD</button>     
+            </form>
         </div>
 
         <div class="container-fluid d-flex flex-column mt-2 w-50" id="tasks">
+            {% for task in all_tasks %}
             <div class="d-flex mt-1">
-                <button class="btn btn-danger me-1 d-flex align-items-center ps-2 pe-3" type="submit" style="width:5px; height: 25px;">X</button>
+                <a href="{{url_for('delete', todo_id=task['id'])}}"><button class="btn btn-danger me-1 d-flex align-items-center ps-2 pe-3" type="submit" style="width:5px; height: 25px;">X</button></a>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input checkbox-task" type="checkbox" value="" id="{{task['id']}}">
                     <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
+                        {{ task['details'] }}
                     </label>
                 </div>            
             </div>
-
+            {% endfor %}
         </div>
     </div>
 </body>
