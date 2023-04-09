@@ -38,7 +38,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-13/Day-5/MiniProject",
+    "last_opened_file_path": "C:/Bootcamp/TaskAccountingAndManaging",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -66,13 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Commit">
-      <created>1679248490530</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1679248490530</updated>
     </task>
     <task id="LOCAL-00139" summary="Commit">
       <created>1679250540799</created>
@@ -410,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680433074448</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Commit">
+      <created>1680433730105</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1680433730106</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

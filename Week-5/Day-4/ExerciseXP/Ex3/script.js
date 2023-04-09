@@ -5,6 +5,7 @@ box.setAttribute('draggable', 'true');
 target.addEventListener('dragover', function (event) {
     event.preventDefault();   
 })
+
 target.addEventListener('drop', function (event) {
     event.preventDefault();
     let id = event.dataTransfer.getData("id");  
