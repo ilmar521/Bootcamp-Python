@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/accounts/templates/accounts_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +39,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-15/Day-1/Exercise/app/templates",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-15/Day-2/FilmProject/app/accounts",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-15\Day-2\FilmProject\app\accounts" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-15\Day-1\Exercise\app\templates" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-15\Day-1\Exercise" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-5\MiniProject" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-4\MiniProject\app" />
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-4\MiniProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-2\MiniProject\app\static" />
@@ -67,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Commit">
-      <created>1679421858165</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1679421858165</updated>
     </task>
     <task id="LOCAL-00146" summary="Commit">
       <created>1679421989207</created>
@@ -411,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681659946235</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Commit">
+      <created>1681660365337</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1681660365337</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
