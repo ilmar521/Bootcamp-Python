@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/templates/add_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-15/Day-1/Exercise/app/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +39,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-15/Day-1/Exercise",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-15/Day-1/Exercise/app/templates",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -73,13 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Commit">
-      <created>1679413345197</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1679413345198</updated>
     </task>
     <task id="LOCAL-00145" summary="Commit">
       <created>1679421858165</created>
@@ -417,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681459644981</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Commit">
+      <created>1681659946235</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1681659946235</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
