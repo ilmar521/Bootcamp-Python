@@ -2,20 +2,41 @@ from app import db
 import datetime
 
 
-class Pet(db.Model):
+availableis = db.Table('availableis',
+    db.Column('country_id', db.Integer, db.ForeignKey('country.id'), primary_key=True),
+    db.Column('film_id', db.Integer, db.ForeignKey('film.id'), primary_key=True)
+)
+category_film = db.Table('category_film',
+    db.Column('category_id', db.Integer, db.ForeignKey('category.id'), primary_key=True),
+    db.Column('film_id', db.Integer, db.ForeignKey('film.id'), primary_key=True)
+)
+director_film = db.Table('director_film',
+    db.Column('director_id', db.Integer, db.ForeignKey('director.id'), primary_key=True),
+    db.Column('film_id', db.Integer, db.ForeignKey('film.id'), primary_key=True)
+)
+
+class Country(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(150))
-    gender = db.Column(db.String(1))
-    breed = db.Column(db.String(150))
-    date_of_birth = db.Column(db.DateTime, default=datetime.datetime.now())
-    details = db.Column(db.Text)
-    price = db.Column(db.Integer)
-    image = db.Column(db.String(250))
-    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id'))
+    films = db.relationship('Film', backref='сountry', lazy='dynamic')
 
-
-class Cart(db.Model):
+class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    pets = db.relationship('Pet', backref='cart', lazy='dynamic')
+    name = db.Column(db.String(150))
 
+
+class Film(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    title = db.Column(db.String(150))
+    release_date = db.Column(db.DateTime, default=datetime.datetime.now())
+    created_in_country = db.Column(db.Integer, db.ForeignKey('сountry.id'))
+    available_in_countries = db.relationship('Country', secondary=availableis, lazy='dynamic', backref=db.backref('films_available', lazy=True))
+    category = db.relationship('Category', secondary=category_film, lazy='dynamic', backref=db.backref('films', lazy=True))
+    director = db.relationship('Director', secondary=director_film, lazy='dynamic', backref=db.backref('films', lazy=True))
+
+
+class Director(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    first_name = db.Column(db.String(150))
+    last_name = db.Column(db.String(150))
 

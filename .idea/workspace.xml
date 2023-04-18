@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/templates/partials/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/templates/partials/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/templates/films.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/films/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,20 +67,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Commit">
-      <created>1679423943630</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1679423943630</updated>
-    </task>
-    <task id="LOCAL-00149" summary="Commit">
-      <created>1679425215683</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1679425215683</updated>
     </task>
     <task id="LOCAL-00150" summary="Commit">
       <created>1679470863182</created>
@@ -414,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681746562267</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="Commit">
+      <created>1681748323715</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1681748323715</updated>
+    </task>
+    <task id="LOCAL-00198" summary="Commit">
+      <created>1681748445551</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1681748445551</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,6 +468,10 @@
           <url>file://$PROJECT_DIR$/Week-10/Day-4/ExerciseXP/Ex2.py</url>
           <line>17</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Week-15/Day-2/FilmProject/app/models.py</url>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
