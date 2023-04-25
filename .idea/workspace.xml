@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/update_coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +68,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00154" summary="Commit">
-      <created>1679590258646</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1679590258646</updated>
     </task>
     <task id="LOCAL-00155" summary="Commit">
       <created>1679639207432</created>
@@ -426,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682264633914</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="Commit">
+      <created>1682435366790</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1682435366790</updated>
+    </task>
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

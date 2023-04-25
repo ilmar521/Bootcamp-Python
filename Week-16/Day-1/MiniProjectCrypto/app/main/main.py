@@ -1,5 +1,4 @@
 from flask import render_template, Blueprint
-from app import flask_app, db
 from app.models import Crypto
 from flask_login import login_required, current_user
 
