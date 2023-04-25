@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/specifics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/specifics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/crypto.db" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/crypto.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00156" summary="Commit">
-      <created>1679807714231</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1679807714231</updated>
     </task>
     <task id="LOCAL-00157" summary="Commit">
       <created>1679848497364</created>
@@ -417,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682435878300</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="Commit">
+      <created>1682437094924</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1682437094924</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

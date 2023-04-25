@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
-from flask_login import login_user, login_required, logout_user
+from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from app import db
@@ -28,7 +28,7 @@ def login_post():
 
     login_user(user, remember=remember)
 
-    return redirect(url_for('main.profile'))
+    return redirect(url_for('main.index'))
 
 
 @auth.route('/signup')
@@ -39,7 +39,7 @@ def signup():
 @auth.route('/signup', methods=['POST'])
 def signup_post():
     email = request.form.get('email')
-    name = request.form.get('name')
+    username = request.form.get('name')
     password = request.form.get('password')
 
     user = User.query.filter_by(
@@ -49,12 +49,18 @@ def signup_post():
         flash('Email address already exists')
         return redirect(url_for('auth.signup'))
 
-    new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'))
+    new_user = User(email=email, username=username, password=generate_password_hash(password, method='sha256'))
 
     db.session.add(new_user)
     db.session.commit()
 
     return redirect(url_for('auth.login'))
+
+
+@auth.route('/profile')
+@login_required
+def profile():
+    return render_template('profile.html', name=current_user.username)
 
 
 @auth.route('/logout')
