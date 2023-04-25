@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/auth/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/specifics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/main/templates/specifics.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +45,24 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-16/Day-1/MiniProjectCrypto/app/auth",
+    "last_opened_file_path": "C:/Bootcamp/Full Stack Coding Bootcamp - Python/Week-16/Day-1/MiniProjectCrypto/app/auth/templates",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\auth" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\auth\templates" />
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\auth" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\main" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-15\Day-2\FilmProject\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\main\templates" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-16\Day-1\MiniProjectCrypto\app\main" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-13\Day-2\MiniProject\app\static" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\DailyChallenge\app\static" />
       <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP\app\static" />
-      <recent name="C:\Bootcamp\Full Stack Coding Bootcamp - Python\Week-12\Day-2\ExerciseXP\app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00155" summary="Commit">
-      <created>1679639207432</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1679639207432</updated>
     </task>
     <task id="LOCAL-00156" summary="Commit">
       <created>1679807714231</created>
@@ -412,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682435366790</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="Commit">
+      <created>1682435878300</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1682435878300</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
