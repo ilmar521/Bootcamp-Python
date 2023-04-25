@@ -1,14 +1,37 @@
-import flask
-import flask_sqlalchemy
-import flask_migrate
-import os
+from flask import Flask
+from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-flask_app = flask.Flask(__name__)
-basedir = os.path.abspath(os.path.dirname(__file__))
+from app.config import Config
 
-flask_app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir, 'schedule.db')
+db = SQLAlchemy()
 
-db = flask_sqlalchemy.SQLAlchemy(flask_app)
-migrate = flask_migrate.Migrate(flask_app, db)
 
-from app import models, routes
+def create_app():
+    flask_app = Flask(__name__)
+
+    flask_app.config.from_object(Config)
+    db.init_app(flask_app)
+    migrate = Migrate(flask_app, db)
+
+    login_manager = LoginManager()
+    login_manager.login_view = 'auth.login'
+    login_manager.init_app(flask_app)
+
+    from .models import User
+
+    @login_manager.user_loader
+    def load_user(user_id):
+        # since the user_id is just the primary key of our user table, use it in the query for the user
+        return User.query.get(int(user_id))
+
+    # blueprint for auth routes in our app
+    from app.auth.auth import auth as auth_blueprint
+    flask_app.register_blueprint(auth_blueprint)
+
+    # blueprint for non-auth parts of app
+    from app.main.main import main as main_blueprint
+    flask_app.register_blueprint(main_blueprint)
+
+    return flask_app
