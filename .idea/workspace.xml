@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6c72f39c-b974-42b7-970d-9fb9f0bba7de" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/crypto.db" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/app/crypto.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/update_coins.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-16/Day-1/MiniProjectCrypto/update_coins.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +68,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675613931482</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Commit">
-      <created>1679850526658</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1679850526659</updated>
     </task>
     <task id="LOCAL-00159" summary="Commit">
       <created>1679850855655</created>
@@ -410,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682438222412</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Commit">
+      <created>1682520843101</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1682520843103</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
